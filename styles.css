@@ -1,0 +1,607 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    /* cursor: none; */
+}
+
+#cursor{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    transition: .1s ease;
+    border-radius: 50%;
+    border: 3px solid gainsboro;
+    animation: animate .3s infinite alternate;
+z-index: 100;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(.7);
+    }
+    50%{
+        box-shadow: 0px 0px 10px gainsboro, 0px 0px 20px gainsboro, 0px 0px 30px gainsboro;
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #444444;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #121212;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#121212;
+  }
+.big
+{
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.overlay-2 {
+    z-index: 9;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: gainsboro;
+}
+
+.overlay {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+}
+
+.overlay p {
+    font-size: 300px;
+    font-weight: 800;
+}
+
+.screen1 {
+    color: #323232;
+    font-family: Poppins;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.myBtn {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myBtn1 {
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myBtn1:hover {
+    color: #101010;
+    cursor: crosshair;
+}
+
+.myBtn1:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn1:hover:before {
+    top: 0;
+}
+button {
+    display: block;
+    padding: 24px 48px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: lowercase;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: crosshair;
+    transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+    color: #101010;
+    cursor: crosshair;
+}
+
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+    top: 0;
+}
+
+#abt{
+    left: 30%;
+}
+
+#pro{
+    left: 70%
+}
+.contain{
+    width: 100%;
+}
+
+.contain img{
+    position: absolute;
+    align-items: center;
+    height: 100%;
+    width: 800px;
+    /* top: -200px; */
+    /* transform: scale(0.8,0.8); */
+    z-index: 3;
+    top: 100px;
+    left: 350px;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212 ; 
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow: hidden;
+}
+.container pre{
+    position: absolute;
+    text-align: left;
+    top: 0%;
+    left: 10%;
+    color: white;
+    font-size: 36px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    text-transform: lowercase;
+    
+}
+#hello{
+    color: gainsboro;
+    font-weight: 200;
+    font-size: 250px;
+    font-stretch: ultra-expanded;
+    letter-spacing: 5.5px;
+    font-family: 'Squada One', cursive;
+}
+#black{
+    color: #121212;
+    font-weight: 200;
+    font-size: 250px;
+    font-stretch: ultra-expanded;
+    letter-spacing: 7px;
+    font-family: 'Squada One', cursive;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    scroll-snap-align: center;
+    /* background-color: #121212; */
+}
+
+#tagline
+{
+    font-size: 36px;
+    color:white ;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+}
+
+.logo{
+    position: absolute;
+    text-transform: uppercase;
+    left: 39%;
+    font-size: 35px;
+    font-stretch:extra-expanded;
+    margin: 0em;
+    margin-top: 0.1em;
+    color:gainsboro;
+    font-family: 'Advent Pro', sans-serif;
+    text-align: center;
+    text-shadow: #afafaf;
+}
+
+.container-left {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    z-index: 5;
+}
+
+.container-right {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    /* background: url('Grayscale2.jpg') no-repeat 50% 50%; */
+    background-size: 110%;
+    top: 0%;
+    box-sizing: border-box;
+    
+}
+
+.container-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.glitch{
+    z-index: -5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+}
+
+/* .loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 2;
+    overflow: hidden;
+} */
+
+marquee {
+    opacity: 0.2;
+    text-transform: uppercase;
+    line-height: 180px;
+    margin: 0;
+    padding: 0;
+    color: #646464;
+    font-size: 200px;
+    font-family: monospace;
+}
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.intro h1 {
+    width: 100%;
+    color: gainsboro;
+    font-weight: 200;
+    font-size: 200px;
+    font-stretch: ultra-expanded;
+    letter-spacing: 5.5px;
+    font-family: 'Squada One', cursive;
+    /* font-size: 150px; */
+    text-transform: lowercase;
+    /* font-weight: 200; */
+    /* color: #fff; */
+    /* font-family: 'Squada One', cursive; */
+}
+
+.intro-title .letter {  
+    display: inline-block;
+    line-height: 1em;
+}   
+
+#two{
+    background-color:rgb(27, 27, 27);
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+}
+
+.container-l{
+    width: 48%;
+    float: left;
+    padding-left: 20px;
+}
+
+.heading1 h1{
+    position: relative;
+    top: -150px;
+    color: gainsboro;
+    font-size: 200px;
+    font-family: 'Squada One', cursive;
+    text-align: left;
+    left: -4%;
+}
+
+#effect{
+   top: -290px;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: left;
+   justify-content: center;
+   color: gainsboro; 
+   position: relative;
+   left: -5%;
+}
+
+.paragraph{
+    font-size: 22px;
+    color: gainsboro;
+    text-align: center;
+    justify-content:center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: lowercase;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform: scale(0.9,0.7);
+    left: -2%;
+}
+
+.hero-title {
+    position: relative;
+    top: 110%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Cosi Azure";
+    font-size: 140px;
+}
+
+.hero-title .letter {
+    display: inline-block;
+    opacity: 0;
+}
+
+.container-r{
+    width: 48%;
+    float: right;
+}
+
+#three{
+    display: inline-block; 
+    background-color:#121212; 
+}
+
+.text-l{
+    margin-top: 5px;
+    color: gainsboro;
+    margin-bottom: 40px;
+    font-size: 220px;
+    text-align: left;
+    font-family: 'Squada One', cursive;
+    font-weight: 200;
+    top: 30px !important;
+    padding-left: 100px;
+    left: 120px;
+}
+
+.slider1{
+    width: 1000px;
+    height: 700px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    left: -300px;
+    top: 30px;
+  }
+
+.rgbKineticSlider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    position: absolute;
+    top: 46vh;
+    z-index: 1;
+    padding: 20px;
+    transition: 0.3s;
+    background: black;
+    color: white;
+}
+
+nav a.next {
+    right: 10vw;
+}
+
+nav a.prev {
+    left: 10vw;
+}
+
+@media screen and (max-width: 53em) {
+    nav a {
+        top: auto;
+        bottom: 3rem;
+    }
+}
+#four{
+    background-color: rgb(27, 27, 27);
+}
+
+#five{
+    background-color: #121212;
+}
+#six{
+    background-color: rgb(27, 27, 27);
+}
+
+.slider-l{
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    left: -250px;
+    transform: scale(1.2,1.2);
+  }
+
+.slider-r{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    left: 170px;
+    transform: scale(1.2,1.2);
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+  
+.slides input{
+  display: none;
+}
+  
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+  
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+  
+  /*css for manual slide navigation*/
+  
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+  
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+  
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+  
+.manual-btn:hover{
+  background: #40D3DC;
+}
+  
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+  
+  /*css for automatic navigation*/
+  
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+  
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+  
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+  
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+  
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+

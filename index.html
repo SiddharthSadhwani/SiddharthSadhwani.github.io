@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Siddharth Sadhwani</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="t.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+        <link href='https://css.gg/menu.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;300&display=swap" rel="stylesheet">
+    </head>
+    <body class="big">
+        <div id="cursor"></div>
+        <div id="scroll-main">
+        <!-- <div class="loader">
+            <marquee direction="right" scrollamount="40">Computer Science</marquee>
+            <marquee direction="left" scrollamount="20">Designer</marquee>
+            <marquee direction="right" scrollamount="30">Engineer</marquee>
+            <marquee direction="" scrollamount="30">Researcher</marquee>
+            <div class="intro">
+                <h1 class="intro-title">Siddharth Sadhwani</h1>
+            </div>
+        </div> -->
+        <section id="one">
+            <div class="overlay">
+                <!-- <p class="screen">EXPLORE</p> -->
+                <div class="intro">
+                    <h1 class="intro-title">Siddharth Sadhwani</h1>
+                </div>
+                <div class="intro1">
+                        <button class="myBtn" onclick="fadeOut()">let's begin</button>
+                </div>
+            </div>
+            <div class="overlay-2"></div>
+            <div class="container">
+                <!-- <div class="logo">Siddharth Sadhwani</div> -->
+            
+            <div class="container-right">
+                <img class='glitch' src="Grayscale2.jpg" alt="">
+            </div>
+            <div class="container-left">
+            <pre id="main"><ins>7</ins><span id="hello">Greetin<span id="black">gs</span><br>human</span>
+</pre>
+<button  id="abt" class="myBtn1" onclick="know()">know more.</button>
+<button id="pro" class="myBtn1" onclick="know()">projects.</button>
+            </div>
+            <!-- <div class="contain">
+                <img src="Grayscale2.jpg" alt="">
+            </div> -->
+        </div>
+        </section>
+        <!-- <section id="two">
+            <div class="container">
+                <div class="heading1"  data-move-x="-1000px" ><h1>about me</h1></div>
+                <div id="effect">
+                    <p class="paragraph">I am an engineer, a researcher and a huge football enthusiast and am currently<br>pursuining my bachelor's from iiit-delhi in computer science and design stream.<br><br>i am also an undergraduate researcher at the lcs2 lab in iiitd and my academic<br>interests include data science and machine learning but i also have the talent of<br>wasting countless hours in solving plethora of problems from any field that i<br>might find interesting.<br><br>i thrive on sports and memes but it wouldn't be a surprise if you find my vibing to<br>soft-rock/pop music or reading dan brown/paulo coehlo and even after all this,<br>if i have any time remaining then either i am perfecting the art of binge watching<br>or am exploring the city.</p>
+                </div>
+            </div>
+        </section> -->
+        <section id="two">
+            <div class="container-r">
+                <div class="heading1"  data-move-x="+1000px" ><h1>about me</h1></div>
+                <div id="effect">
+                    <p class="paragraph">I am an engineer, a researcher and a huge football enthusiast and am currently<br>pursuining my bachelor's from iiit-delhi in computer science and design stream.<br><br>i am also an undergraduate researcher at the lcs2 lab in iiitd and my academic<br>interests include data science and machine learning but i also have the talent of<br>wasting countless hours in solving plethora of problems from any field that i<br>might find interesting.<br><br>i thrive on sports and memes but it wouldn't be a surprise if you find my vibing to<br>soft-rock/pop music or reading dan brown/paulo coehlo and even after all this,<br>if i have any time remaining then either i am perfecting the art of binge watching<br>or am exploring the city.</p>
+                </div>
+            </div>
+            <div class="container-l">
+                <div class="wrapper"></div>
+            <!-- <div class="hero-title"><h1>OFFBEAT</h1></div> -->
+        </div>
+        </section>
+        <section id="three">
+            <div class="container-l">
+                <div class="heading1" data-rotate-y="270deg" data-move-x="-1000px">
+                <h1 class="text-l" data-move-x="+1000px"  >pro<br>jec<br>ts</h1>
+            </div>
+            </div>
+            <div class="container-r">
+            <div class="slider1">
+                <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+            </div>
+            </div>
+        </section>
+        <section id="four">
+            <div class="container-l">
+                <div class="slider-l">
+                    <div class="slides">
+
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      <input type="radio" name="radio-btn" id="radio4">
+
+                      <div class="slide first">
+                        <img src="SV-1.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="SV-2.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="SV-5.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="SV-6.png" alt="">
+                      </div>
+
+                      <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div>
+
+
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="container-r">  
+            </div>
+        </section>
+        <section id="five">
+            <div class="container-r">
+                <div class="slider-r">
+                    <div class="slides">
+
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      <input type="radio" name="radio-btn" id="radio4">
+
+                      <div class="slide first">
+                        <img src="TC-3.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="TC-2.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="TC-1.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="TC-4.gif" alt="">
+                      </div>
+
+                      <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div>
+
+
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="container-l">  
+            </div>
+        </section>
+        <section id="six">
+            <div class="container-l">
+                <div class="slider-l">
+                    <div class="slides">
+
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      <input type="radio" name="radio-btn" id="radio4">
+
+                      <div class="slide first">
+                        <img src="bg.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="level_bg.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="SV-5.png" alt="">
+                      </div>
+                      <div class="slide">
+                        <img src="SV-6.png" alt="">
+                      </div>
+
+                      <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div>
+
+
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="container-r">  
+            </div>
+        </section>
+    </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+    <script src="hover-effect.umd.js"></script>
+    <script src="jquery.smoove.js"></script>
+    <script src="mgGlitch.min.js"></script>
+    <script src="script.js"></script>
+</html>
