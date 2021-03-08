@@ -8,16 +8,6 @@ body {
     /* cursor: none; */
 }
 
-#cursor{
-    width: 40px;
-    height: 40px;
-    position:absolute;
-    transition: .1s ease;
-    border-radius: 50%;
-    border: 3px solid gainsboro;
-    animation: animate .3s infinite alternate;
-z-index: 100;
-}
 
 @keyframes animate{
     0%{
