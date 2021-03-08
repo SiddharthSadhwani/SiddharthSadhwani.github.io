@@ -12,11 +12,6 @@ text.reveal(7000);
 function hello(){
     document.getElementsByTagName("body")[0].classList.remove("big");
 }
-// TweenMax.to(".loader", 2.2, {
-//     delay: 5,
-//     top: "-100%",
-//     ease: Expo.easeInOut
-// });
 
 TweenMax.from(".logo", 2, {
     delay: 6,
@@ -120,40 +115,6 @@ var hoverDistort = new hoverEffect({
     displacementImage: '4.png'
 });
 
-// Wrap every letter in a span
-// var textWrapper = document.querySelector('.hero-title');
-// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-// $(document).ready(function() {
-
-// $('.wrapper').hover(         
-// function () {
-// anime.timeline({loop: false})
-// .add({
-// targets: '.hero-title .letter',
-// translateX: [80,0],
-// translateZ: 0,
-// opacity: [0,1],
-// easing: "easeOutExpo",
-// duration: 1400,
-// delay: (el, i) => 100 + 40 * i
-// })
-// },
-
-// function () {
-// anime.timeline({loop: false})
-// .add({
-// targets: '.hero-title .letter',
-// translateX: [0,-80],
-// opacity: [1,0],
-// easing: "easeInExpo",
-// duration: 800,
-// delay: (el, i) => 40 * i
-// });         
-// }
-// );
-    
-// });
 
 const images = ["TC-3.png", "SV-1.png", "bg.png"];
 const texts = [["timcoins"], [""], [""]];
@@ -178,7 +139,6 @@ rgbKineticSlider = new rgbKineticSlider({
     transitionScaleAmplitude: 160,
 
     nav: false,
-    // navElement: ".main-nav",
 
     imagesRgbEffect: true,
     imagesRgbIntensity: 4,
@@ -203,12 +163,4 @@ var counter = 1;
       }
     }, 5000);
 
-var counter1 = 1;
-setInterval(function(){
-    document.getElementById('one_radio' + counter1).checked = true;
-    counter1++;
-    if(counter1 > 4){
-    counter1 = 1;
-    }
-}, 5000);
     
