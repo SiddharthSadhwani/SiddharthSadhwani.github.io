@@ -1,3 +1,5 @@
+window.scrollTo({ top: 0, behavior: 'smooth' });
+
 const text = baffle(".intro-title");
 console.log(text);
 text.set({
