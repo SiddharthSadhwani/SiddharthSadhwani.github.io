@@ -116,7 +116,7 @@ var hoverDistort = new hoverEffect({
     parent: document.querySelector('.wrapper'),
     intensity: 0.5,
     image1: 'edited.jpg',
-    image2: 'res.jpg',
+    image2: 'res.JPG',
     displacementImage: '4.png'
 });
 
