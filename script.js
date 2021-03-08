@@ -124,9 +124,9 @@ rgbKineticSlider = new rgbKineticSlider({
     itemsTitles: texts,
 
     backgroundDisplacementSprite:
-        "https://hmongouachon.com/_demos/rgbKineticSlider/map-9.jpg",
+        "map-9.jpg",
     cursorDisplacementSprite:
-        "https://hmongouachon.com/_demos/rgbKineticSlider/displace-circle.png",
+        "displace-circle.png",
     cursorScaleIntensity: 0.6,
     cursorMomentum: 0.14,
 
