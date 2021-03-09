@@ -4,7 +4,8 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-color: #121212;
+    background-color: rgb(27, 27, 27);
+    cursor: crosshair;
 }
 
 /* width */
@@ -264,25 +265,7 @@ section {
     left: 0%;
 }
 
-/* .loader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    z-index: 2;
-    overflow: hidden;
-} */
 
-marquee {
-    opacity: 0.2;
-    text-transform: uppercase;
-    line-height: 180px;
-    margin: 0;
-    padding: 0;
-    color: #646464;
-    font-size: 200px;
-    font-family: monospace;
-}
 
 .intro {
     position: absolute;
@@ -336,7 +319,7 @@ marquee {
 }
 
 #effect{
-   top: -290px;
+   top: -320px !important;
    width: 100%;
    height: 100vh;
    display: flex;
@@ -354,14 +337,50 @@ marquee {
     justify-content:center;
     font-family: 'Oswald', sans-serif;
     text-transform: lowercase;
+    position: fixed;
 }
 
+.blue{
+    text-transform: uppercase;
+    color: grey;
+    /* position: fixed; */
+}
+.blue:hover{
+    color: aliceblue;
+}
+
+.blue1{
+    text-transform: uppercase;
+    color: rgb(181, 217, 233);
+    /* position: fixed; */
+}
+.blue1:hover{
+    color: rgb(21, 115, 177);
+}
+
+.gold{
+    text-transform: uppercase;
+    color: rgb(255, 213, 113);
+    /* position: fixed; */
+}
+.gold:hover{
+    color: rgb(255,183,17);
+}
+
+.ice{
+    text-transform: uppercase;
+    color: rgb(51, 104, 117);
+    /* position: fixed; */
+}
+.ice:hover{
+    color: rgb(45,94,160);
+}
 .wrapper {
     width: 100%;
     height: 100vh;
     position: relative;
     transform: scale(0.9,0.7);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     left: -2%;
 }
 
@@ -406,10 +425,10 @@ marquee {
 .slider1{
     width: 1000px;
     height: 700px;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     overflow: hidden;
     position: relative;
-    left: -300px;
+    left: -350px;
     top: 30px;
   }
 
@@ -422,7 +441,7 @@ marquee {
 }
 
 canvas {
-    position: absolute;
+    position: relative;
     display: block;
     top: 0;
     left: 0;
@@ -487,7 +506,7 @@ nav a.prev {
 }
 .heading4{
     position: relative;
-    top: -300px;
+    top: 200px;
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -495,7 +514,7 @@ nav a.prev {
     justify-content: center;
     color: gainsboro; 
  
-    left: -250%;
+    left: -10%;
  }
  .paragraph4{
      font-size: 22px;
@@ -545,123 +564,194 @@ nav a.prev {
      text-transform: lowercase;
  }
 .slider-l{
-    width: 700px;
-    height: 500px;
-    border-radius: 20px;
+    width: 800px;
+    height: 600px;
+    /* border-radius: 20px; */
     overflow: hidden;
     position: relative;
-    top: 130px;
-    left: 80px;
-    transform: scale(1.2,1.2);
+    top: 70px;
+    left: 70px;
+    transform: scale(1,1);
   }
 
 .slider-r{
-    width: 700px;
-    height: 500px;
-    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    /* border-radius: 10px; */
     overflow: hidden;
     position: relative;
-    top: +130px;
-    left: -70px;
-    transform: scale(1.2,1.2);
+    top: +80px;
+    left: -130px;
+    transform: scale(1,1);
+}
+.slider-r img{
+    width: 700px;
+    height: 500px;
 }
 
-.slides{
-  width: 500%;
-  height: 500px;
-  display: flex;
-}
-  
-.slides input{
-  display: none;
-}
-  
-.slide{
-  width: 20%;
-  transition: 2s;
-}
-  
-.slide img{
-  width: 800px;
-  height: 500px;
-}
-  
-  /*css for manual slide navigation*/
-  
-.navigation-manual{
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-  
-.manual-btn{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-  
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-  
-.manual-btn:hover{
-  background: #40D3DC;
-}
-  
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-  
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-  
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-  
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-  
-  /*css for automatic navigation*/
-  
-.navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-  
-.navigation-auto div{
-  border: 2px solid #40D3DC;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-  
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-  
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #40D3DC;
-}
-  
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #40D3DC;
+.wrapper1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform: scale(1,1);
+    /* border-radius: 20px; */
+    left: -2%;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #40D3DC;
+.wrapper2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform: scale(1,1);
+    /* border-radius: 20px; */
+    left: -2%;
 }
+.wrapper3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    transform: scale(1,1);
+    /* border-radius: 20px; */
+    left: -2%;
+}
+a:link {
+    color: gainsboro;
+    background-color: transparent;
+    text-decoration: none;
+  }
   
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: #40D3DC;
-}
+  a:visited {
+    color: royalblue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:gainsboro;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: gainsboro;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
+  .foot{
+      height: 20vh !important;
+      width: 100%;
+      background-color: rgb(27, 27, 27);
+      align-content: center;
+      margin-bottom: 30px;
+      padding-bottom: 50px;
+  }
+  .cont{
+      font-size: 60px;
+      text-align: center;
+      font-stretch: ultra-expanded;
+      letter-spacing: 10px;
+      font-family: 'Squada One', cursive;
+      color: gainsboro;
+  }
+
+  .wrap{
+      padding-right: 40px;
+      display: inline-block;
+      align-items: center;
+      position: relative;
+      float: right;
+  }
+  .wrap .buttons{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: right;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    /* cursor: pointer; */
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrap .buttons:hover{
+    width: 200px;
+  }
+  .wrap .buttons .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrap .buttons:nth-child(1):hover .icon{
+    background: #00349c;
+  }
+  .wrap .buttons:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrap .buttons:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  
+  
+  .wrap .buttons:nth-child(4):hover .icon{
+    background: #333333;
+  }
+  .wrap .buttons .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrap .buttons:hover .icon i{
+    color: #fff;
+  }
+  .wrap .buttons span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrap .buttons:nth-child(1) span{
+    color: #00349c;
+  }
+  .wrap .buttons:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrap .buttons:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrap .buttons:nth-child(4) span{
+    color: #333333;
+  }
+  .email{
+      
+      position: relative;
+      display: inline-block;
+      color: gainsboro;
+      font-size: 40px;
+      padding-left: 30px;
+      font-weight: 300;
+      font-stretch: ultra-expanded;
+      max-width: 200px; 
+  }
+  .mail a:active{
+    color: gainsboro !important;
+    background-color: transparent;
+    text-decoration: underline; 
+  }
+  .mail a:visited{
+    color: gainsboro !important;
+    background-color: transparent;
+    text-decoration: underline; 
+  }
+  .mail a:link{
+    color: gainsboro !important;
+    background-color: transparent;
+    text-decoration: underline; 
+  }
