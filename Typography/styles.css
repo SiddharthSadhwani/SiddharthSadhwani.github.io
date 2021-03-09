@@ -34,3 +34,9 @@ button{
     top: 200px;
     z-index: 5;
 }
+.help{
+    position: fixed;
+    top: 85vh;
+    font-size: 30px;
+    color: gainsboro;
+}

@@ -36,9 +36,9 @@
                 {
                     qwerty-=off/20;
                 }
-                if(opa-(off/400)>=0 && opa-(off/400)<=1)
+                if(opa-(off/5000)>=0 && opa-(off/5000)<=1)
                 {
-                    opa-=off/400;
+                    opa-=off/5000;
                 }
                 document.getElementById('test').style.opacity=opa;
                 document.getElementById('test').style.fontSize=qwerty+'px';
