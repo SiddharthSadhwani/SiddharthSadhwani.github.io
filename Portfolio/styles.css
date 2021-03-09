@@ -58,7 +58,6 @@ body {
     position: absolute;
     top: 80%;
     left: 50%;
-    border-radius: 20px;
     transform: translate(-50%, -50%);
 }
 .myBtn1 {
@@ -66,7 +65,6 @@ body {
     position: absolute;
     top: 90%;
     left: 50%;
-    border-radius: 20px;
     transform: translate(-50%, -50%);
 }
 .myBtn1:hover {
