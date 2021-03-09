@@ -15,12 +15,6 @@ function hello(){
     document.getElementsByTagName("body")[0].classList.remove("big");
 }
 
-TweenMax.from(".logo", 2, {
-    delay: 6,
-    y: 10,
-    opacity: 0,
-    ease: Expo.easeInOut
-});
 
 function fadeOut() {
 
@@ -120,8 +114,8 @@ var hoverDistort = new hoverEffect({
 var hoverDistort1 = new hoverEffect({
     parent: document.querySelector('.wrapper1'),
     intensity: 0.5,
-    image1: 'SV-6.png',
-    image2: 'SV-1.png',
+    image1: 'SV-1.png',
+    image2: 'SV-6.png',
     displacementImage: '4.png'
 });
 

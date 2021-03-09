@@ -8,22 +8,21 @@ body {
     cursor: crosshair;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
+
   ::-webkit-scrollbar-track {
     background: #444444;
   }
   
-  /* Handle */
+
   ::-webkit-scrollbar-thumb {
     background: #121212;
   }
   
-  /* Handle on hover */
+
   ::-webkit-scrollbar-thumb:hover {
     background:#121212;
   }
@@ -52,15 +51,6 @@ body {
 .overlay p {
     font-size: 300px;
     font-weight: 800;
-}
-
-.screen1 {
-    color: #323232;
-    font-family: Poppins;
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .myBtn {
@@ -145,22 +135,6 @@ button {
 #pro{
     left: 70%
 }
-.contain{
-    width: 100%;
-}
-
-.contain img{
-    position: absolute;
-    align-items: center;
-    height: 100%;
-    width: 800px;
-    /* top: -200px; */
-    /* transform: scale(0.8,0.8); */
-    z-index: 3;
-    top: 100px;
-    left: 350px;
-
-}
 
 .container {
     width: 100%;
@@ -208,7 +182,6 @@ section {
     width: 100%;
     min-height: 100vh;
     scroll-snap-align: center;
-    /* background-color: #121212; */
 }
 
 #tagline
@@ -219,19 +192,6 @@ section {
     font-family: 'Oswald', sans-serif;
 }
 
-.logo{
-    position: absolute;
-    text-transform: uppercase;
-    left: 39%;
-    font-size: 35px;
-    font-stretch:extra-expanded;
-    margin: 0em;
-    margin-top: 0.1em;
-    color:gainsboro;
-    font-family: 'Advent Pro', sans-serif;
-    text-align: center;
-    text-shadow: #afafaf;
-}
 
 .container-left {
     position: absolute;
@@ -283,11 +243,7 @@ section {
     font-stretch: ultra-expanded;
     letter-spacing: 5.5px;
     font-family: 'Squada One', cursive;
-    /* font-size: 150px; */
     text-transform: lowercase;
-    /* font-weight: 200; */
-    /* color: #fff; */
-    /* font-family: 'Squada One', cursive; */
 }
 
 .intro-title .letter {  
@@ -343,7 +299,6 @@ section {
 .blue{
     text-transform: uppercase;
     color: grey;
-    /* position: fixed; */
 }
 .blue:hover{
     color: aliceblue;
@@ -352,7 +307,6 @@ section {
 .blue1{
     text-transform: uppercase;
     color: rgb(181, 217, 233);
-    /* position: fixed; */
 }
 .blue1:hover{
     color: rgb(21, 115, 177);
@@ -361,7 +315,6 @@ section {
 .gold{
     text-transform: uppercase;
     color: rgb(255, 213, 113);
-    /* position: fixed; */
 }
 .gold:hover{
     color: rgb(255,183,17);
@@ -370,7 +323,6 @@ section {
 .ice{
     text-transform: uppercase;
     color: rgb(51, 104, 117);
-    /* position: fixed; */
 }
 .ice:hover{
     color: rgb(45,94,160);
@@ -380,24 +332,9 @@ section {
     height: 100vh;
     position: relative;
     transform: scale(0.9,0.7);
-    /* border-radius: 20px; */
     left: -2%;
 }
 
-.hero-title {
-    position: relative;
-    top: 110%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-family: "Cosi Azure";
-    font-size: 140px;
-}
-
-.hero-title .letter {
-    display: inline-block;
-    opacity: 0;
-}
 
 .container-r{
     width: 48%;
@@ -425,7 +362,6 @@ section {
 .slider1{
     width: 1000px;
     height: 700px;
-    /* border-radius: 50px; */
     overflow: hidden;
     position: relative;
     left: -350px;
@@ -447,31 +383,6 @@ canvas {
     left: 0;
 }
 
-nav a {
-    text-decoration: none;
-    position: absolute;
-    top: 46vh;
-    z-index: 1;
-    padding: 20px;
-    transition: 0.3s;
-    background: black;
-    color: white;
-}
-
-nav a.next {
-    right: 10vw;
-}
-
-nav a.prev {
-    left: 10vw;
-}
-
-@media screen and (max-width: 53em) {
-    nav a {
-        top: auto;
-        bottom: 3rem;
-    }
-}
 #four{
     background-color: rgb(27, 27, 27);
     display: inline-block;
@@ -566,7 +477,6 @@ nav a.prev {
 .slider-l{
     width: 800px;
     height: 600px;
-    /* border-radius: 20px; */
     overflow: hidden;
     position: relative;
     top: 70px;
@@ -577,7 +487,6 @@ nav a.prev {
 .slider-r{
     width: 800px;
     height: 600px;
-    /* border-radius: 10px; */
     overflow: hidden;
     position: relative;
     top: +80px;
@@ -594,7 +503,6 @@ nav a.prev {
     height: 100vh;
     position: relative;
     transform: scale(1,1);
-    /* border-radius: 20px; */
     left: -2%;
 }
 
@@ -603,7 +511,6 @@ nav a.prev {
     min-height: 100vh;
     position: relative;
     transform: scale(1,1);
-    /* border-radius: 20px; */
     left: -2%;
 }
 .wrapper3 {
@@ -611,17 +518,16 @@ nav a.prev {
     height: 100vh;
     position: relative;
     transform: scale(1,1);
-    /* border-radius: 20px; */
     left: -2%;
 }
 a:link {
-    color: gainsboro;
+    color: royalblue;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: royalblue;
+    color: gainsboro;
     background-color: transparent;
     text-decoration: none;
   }
@@ -671,7 +577,6 @@ a:link {
     overflow: hidden;
     background: #fff;
     border-radius: 50px;
-    /* cursor: pointer; */
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease-out;
   }
