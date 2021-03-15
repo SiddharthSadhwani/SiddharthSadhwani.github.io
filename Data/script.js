@@ -31,10 +31,11 @@ d3.csv("updated1.csv", function(data) {
     .call(d3.axisLeft(y));
   
     svg.append("text")
-    .attr("text-anchor", "end")
-    .attr("x", width)
-    .attr("y", height + margin.top + 20)
-    .text("Age");
+    .attr("x", width-500)
+    .attr("y", height-30)
+    .text("Age")
+    .style('fill', 'white');
+
 
 svg.append("text")
     .attr("transform", "rotate(-90)")
