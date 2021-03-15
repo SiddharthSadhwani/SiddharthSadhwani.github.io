@@ -1,0 +1,121 @@
+
+body,html{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+} 
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header {
+    background-color: rgb(141, 128, 61);
+	height: 10%;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+    text-align: center;
+}
+.logo {
+    text-align: center;
+}
+.logo a {
+	text-decoration:solid;
+    font-weight: bolder;
+	font-size: 60px;
+	font-family: "Roboto", sans-serif;
+	color: white;
+	letter-spacing: 7px;
+}
+ 
+ #my_dataviz{
+      background-color: black;
+      text-align: center;
+      background-size: cover;
+      height: 76vh;
+      width: 100%;
+      display: inline-block;
+      margin-top: 5%;
+  }
+  
+  .bubbles {
+    stroke-width: 1px;
+    stroke: white;
+  }
+  .bubbles:hover {
+    stroke: black;
+  }
+
+  .tooly{
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    color: black;
+  }
+
+  .tooly h1{
+    font-size: 35px;
+    margin-top: 60px;
+    /* width: 200px; */
+    color: black;
+    font-family: "Roboto", sans-serif;
+  }
+  .tooly h2{
+    position: relative;
+    top: -40px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .player{
+    position: relative;
+    transform: scale(1.5);
+  }
+  .extras{
+      display: block;
+  }
+  .club{
+      left: -90px;
+      top: -100px;
+      transform: scale(1.2);    
+    position: relative;
+    text-align: center;
+  }
+  .country{
+    position: relative;
+    left: 75px;
+    top: -120px;
+    transform: scale(1.8);
+  }
+  
+  .yAxis path {
+      stroke: white;
+      stroke-width: 3px;
+    }
+  .yAxis line{
+    stroke: white;
+    stroke-width: 2px;
+  }
+  .yAxis text{
+    fill: white;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+.checkbox{
+    transform: scale(2.5);
+}
+  .all-buttons
+  {
+      text-align: center;
+  }
+  .B-label{
+      margin-left: 20px;
+      font-size: 30px !important;
+      color: white;
+  }
+  .toggle{
+      display: inline-block;
+      margin-left: 20px;
+      margin-top: 20px;
+  }
